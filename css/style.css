@@ -1395,3 +1395,14 @@ main {
 .hidden {
   display: none;
 }
+
+.img-upload__field-wrapper--invalid .text__hashtags,
+.img-upload__field-wrapper--invalid .text__description {
+  outline: 2px solid #ff4d4d;
+}
+
+.img-upload__error {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #ff4d4d;
+}
