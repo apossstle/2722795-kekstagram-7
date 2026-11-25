@@ -1,4 +1,6 @@
 import { isEscapeKey } from './util.js';
+import { resetScale } from './scale.js';
+import { resetEffects } from './effects.js';
 
 const MAX_HASHTAGS_COUNT = 5;
 const MAX_COMMENT_LENGTH = 140;
@@ -91,6 +93,8 @@ function closeUploadForm() {
 
   form.reset();
   fileInput.value = '';
+  resetScale();
+  resetEffects();
   pristine.reset();
 }
 
